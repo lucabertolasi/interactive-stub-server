@@ -1,0 +1,38 @@
+{
+  "name": "interactive-stub-server",
+  "version": "1.0.0",
+  "description": "An easy, interactive stub server to help prototype faster.",
+  "main": "server.js",
+  "dependencies": {
+    "codeflask": "^0.3.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "helmet": "^3.11.0",
+    "prismjs": "^1.10.0",
+    "randexp": "^0.4.6",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-js-obfuscator": "0.0.5"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack --config ./webpack.config.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
+  },
+  "author": "luca.bertolasi@gmail.com",
+  "license": "MIT"
+}

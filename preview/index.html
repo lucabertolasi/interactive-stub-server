@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimum-scale=1">
+
+    <title>Interactive Stub Server</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        background-color: #000;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+      }
+      video {
+        max-width: 1280px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <video
+      autoplay
+      playsinline
+      controls
+      muted
+      loop
+      poster="poster.jpg">
+      <source
+        src="video.webm"
+        type="video/webm">
+      <source
+        src="video.mp4"
+        type="video/mp4">
+      <source
+        src="video.ogv"
+        type="video/ogg">
+      Your browser doesn't support HTML5 video tag.
+    </video>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+@import '~prismjs/themes/prism';
+@import '~codeflask/src/codeflask';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #000;
+}
+
+body {
+  display: none;
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  overflow-x: hidden;
+  padding: 1.5rem;
+}
+
+#feedback {
+  margin-bottom: 4rem;
+
+    textarea{
+      width: 100%;
+      height: 10rem;
+      padding: 1rem;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      border-radius: .5rem;
+    }
+}
+
+.route {
+  * {
+    font-size: 1.5rem;
+  }
+
+  .path {
+    display: flex;
+
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    margin-bottom: 2rem;
+
+    input {
+      flex-basis: 100%;
+      letter-spacing: .1rem;
+
+      &:disabled {
+        background-color: #EEE;
+      }
+
+      &.invalid-regexp {
+        background-color: mistyrose;
+      }
+    }
+  }
+
+  .example {
+    margin-bottom: 4rem;
+    width: 100%;
+
+    a {
+      display: block;
+      letter-spacing: .1rem;
+      margin-bottom: 2rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#json-editor {
+  background-color : #E4F0F5; // #eee
+  height           : 50rem;
+  position         : relative;
+  width            : 100%;
+
+  * {
+    font-size: 1.5rem;
+  }
+
+  &.invalid-json {
+    background-color : mistyrose;
+  }
+}
